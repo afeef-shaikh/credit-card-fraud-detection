@@ -1,0 +1,15 @@
+[theme]
+base = "light"
+primaryColor = "#00806A"
+backgroundColor = "#F6F7F4"
+secondaryBackgroundColor = "#ECEFEB"
+textColor = "#14231F"
+font = "Schibsted Grotesk:https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap"
+borderColor = "#DCE2DE"
+baseRadius = "6px"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+headless = true
