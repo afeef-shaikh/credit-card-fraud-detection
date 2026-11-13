@@ -28,7 +28,7 @@ html, body, [class*="st-"], .stMarkdown, button, input {{ font-family: {FONT}; }
 .block-container {{ max-width: 1120px; padding-top: 2.2rem; padding-bottom: 4rem; }}
 [data-testid="stHeader"] {{ background: transparent; }}
 [data-testid="stDecoration"] {{ display: none; }}
-.num, .ledger td, .facts b {{ font-variant-numeric: tabular-nums; }}
+
 
 .byline {{ color: {MUTED}; font-size: 0.95rem; margin: 0 0 0.9rem 0; }}
 .byline a {{ color: {MUTED}; text-decoration: underline; text-underline-offset: 3px; }}
@@ -55,7 +55,7 @@ p.lede {{ font-size: 1.12rem; line-height: 1.55; color: {INK}; max-width: 62ch; 
 .note {{ font-size: 0.9rem; line-height: 1.5; color: {MUTED}; max-width: 70ch; }}
 .counts {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.6rem 1.4rem; margin: 0.4rem 0 0.6rem 0; }}
 .counts div {{ border-left: 3px solid var(--c); padding: 0.1rem 0 0.1rem 0.7rem; color: {MUTED}; font-size: 0.88rem; }}
-.counts b {{ display: block; color: {INK}; font-size: 1.35rem; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }}
+.counts b {{ display: block; color: {INK}; font-size: 1.35rem; font-weight: 600;  white-space: nowrap; }}
 
 .ledger-wrap {{ max-height: 520px; overflow: auto; border: 1px solid {LINE}; border-radius: 6px; background: {PANEL}; }}
 table.ledger {{ border-collapse: collapse; width: 100%; font-size: 0.93rem; }}
@@ -71,9 +71,9 @@ table.ledger {{ border-collapse: collapse; width: 100%; font-size: 0.93rem; }}
 .tag.legit {{ background: #E9EEEC; color: {MUTED}; }}
 
 .txn {{ border-top: 2px solid {INK}; padding-top: 0.8rem; }}
-.txn .amt {{ font-size: 2.1rem; font-weight: 700; letter-spacing: -0.015em; color: {INK}; font-variant-numeric: tabular-nums; line-height: 1.1; }}
+.txn .amt {{ font-size: 2.1rem; font-weight: 700; letter-spacing: -0.015em; color: {INK};  line-height: 1.1; }}
 .txn dl {{ display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 1rem; margin: 0.9rem 0 1rem 0; font-size: 0.95rem; }}
-.txn dt {{ color: {MUTED}; }} .txn dd {{ margin: 0; color: {INK}; font-variant-numeric: tabular-nums; }}
+.txn dt {{ color: {MUTED}; }} .txn dd {{ margin: 0; color: {INK};  }}
 
 h3.sec {{ font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; margin: 1.6rem 0 0.35rem 0; color: {INK}; }}
 .footer {{ border-top: 1px solid {LINE}; margin-top: 3rem; padding-top: 1rem; color: {MUTED}; font-size: 0.92rem; }}
