@@ -4,6 +4,8 @@ Most fraud-detection tutorials stop at "99.9% accuracy." This project asks the q
 
 **Headline result:** On the most recent 7.6 hours of transactions (never seen during training), the final model **cuts fraud losses by 64%**, catching 59 of 74 frauds, with **72% of alerts being real fraud at real-world transaction volume**. Re-ordering the analyst queue by expected € loss recovers **12× more fraud money from the first 10 reviews** than the standard approach.
 
+**Live app: [fraud-loss-simulator.streamlit.app](https://fraud-loss-simulator.streamlit.app)**. Change the review cost and the cutoff and watch the losses move, work the analyst queue, and see why any transaction was flagged.
+
 ---
 
 ## Project structure
@@ -14,6 +16,7 @@ Most fraud-detection tutorials stop at "99.9% accuracy." This project asks the q
 | `02_data_cleaning.ipynb` | Removes duplicates, scales `Amount` and `Time` |
 | `03_model_building.ipynb` | Baseline: 7 classifiers compared on a random 80/20 split |
 | **`04_cost_sensitive_extension.ipynb`** | **My extension:** honest evaluation, cost-based decisions, analyst prioritization, explainability |
+| `app/` | Streamlit app (`streamlit run app/streamlit_app.py`); `build_artifacts.py` regenerates its precomputed data |
 
 Notebooks 01–03 are based on [tkarim45/Beginner-Data-Science-Projects](https://github.com/tkarim45/Beginner-Data-Science-Projects). Notebook 04 is my own work.
 
@@ -95,4 +98,4 @@ jupyter notebook
 ```
 Run notebooks in order (01 → 04). Notebook 04 reads the raw `data/creditcard.csv` and runs in about one minute.
 
-**Tech:** Python, pandas, scikit-learn, LightGBM, SHAP, matplotlib, seaborn
+**Tech:** Python, pandas, scikit-learn, LightGBM, SHAP, matplotlib, seaborn, Streamlit, Plotly

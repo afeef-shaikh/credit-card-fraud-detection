@@ -53,10 +53,9 @@ p.lede {{ font-size: 1.12rem; line-height: 1.55; color: {INK}; max-width: 62ch; 
 .readout {{ font-size: 1.08rem; line-height: 1.6; color: {INK}; max-width: 64ch; margin: 0.2rem 0 1rem 0; }}
 .readout b {{ font-weight: 600; }}
 .note {{ font-size: 0.9rem; line-height: 1.5; color: {MUTED}; max-width: 70ch; }}
-.counts {{ display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.6rem 1.4rem; margin: 0.4rem 0 0.6rem 0; }}
+.counts {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.6rem 1.4rem; margin: 0.4rem 0 0.6rem 0; }}
 .counts div {{ border-left: 3px solid var(--c); padding: 0.1rem 0 0.1rem 0.7rem; color: {MUTED}; font-size: 0.88rem; }}
-.counts b {{ display: block; color: {INK}; font-size: 1.35rem; font-weight: 600; font-variant-numeric: tabular-nums; }}
-@media (max-width: 640px) {{ .counts {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }} }}
+.counts b {{ display: block; color: {INK}; font-size: 1.35rem; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }}
 
 .ledger-wrap {{ max-height: 520px; overflow: auto; border: 1px solid {LINE}; border-radius: 6px; background: {PANEL}; }}
 table.ledger {{ border-collapse: collapse; width: 100%; font-size: 0.93rem; }}
